@@ -1,6 +1,7 @@
 import { NestApplication, NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import * as cookieParser from 'cookie-parser';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestApplication>(AppModule, {
@@ -8,6 +9,7 @@ async function bootstrap() {
   });
   const port = process.env.PORT;
 
+  app.use(cookieParser());
   const config = new DocumentBuilder()
     .setTitle('Community Blog api')
     .setDescription('A little description to go herejkm')
@@ -17,8 +19,8 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
-  app.listen(3008).then((values) => {
-    console.log(3008);
+  app.listen(port).then(() => {
+    console.log(port);
   });
 }
 
