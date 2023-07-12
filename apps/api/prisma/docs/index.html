@@ -1,0 +1,6028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+  <title>Prisma Generated Docs</title>
+  <link href="styles/main.css" rel="stylesheet" />
+
+</head>
+<body class="bg-gray-200">
+<div class="flex min-h-screen">
+  <div
+    class="sticky top-0 w-1/5 flex-shrink-0 h-screen p-4 px-6 mr-4 overflow-auto bg-white mac-h-screen"
+  >
+    <div class="mb-8">
+
+      <svg
+        fill="none"
+        height="40"
+        style="cursor: pointer;"
+        viewBox="0 0 109 40"
+        width="109"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0)">
+          <path
+            d="M33.7753 30.4749L19.6557 1.25993C19.4803 0.900386 19.2084 0.593746 18.8687 0.372468C18.529 0.151189 18.1343 0.0235052 17.7262 0.00293118C17.3174 -0.0237544 16.909 0.0592759 16.5452 0.242992C16.1815 0.426708 15.8764 0.704076 15.6632 1.04493L0.349 25.2119C0.116122 25.5768 -0.00515381 25.9989 -0.000609227 26.4286C0.00393536 26.8583 0.134112 27.2778 0.374658 27.6379L7.86191 38.9349C8.14517 39.359 8.56155 39.6825 9.04894 39.8571C9.53633 40.0317 10.0686 40.0482 10.5664 39.9039L32.2943 33.6419C32.6214 33.5487 32.9242 33.3882 33.1822 33.1712C33.4402 32.9541 33.6473 32.6857 33.7897 32.3839C33.93 32.0837 34.0015 31.7574 33.9992 31.4275C33.9969 31.0976 33.9208 30.7722 33.7763 30.4739L33.7753 30.4749ZM30.6141 31.7279L12.1767 37.0399C11.6143 37.2029 11.0744 36.7279 11.1914 36.1749L17.7785 5.44393C17.9017 4.86893 18.7166 4.77793 18.9742 5.30993L31.1684 30.5399C31.2223 30.6524 31.2505 30.7748 31.2511 30.8989C31.2518 31.023 31.2247 31.1458 31.172 31.2587C31.1192 31.3716 31.0419 31.4721 30.9454 31.5531C30.8489 31.6341 30.7355 31.6937 30.6131 31.7279H30.6141Z"
+            fill="black"
+          ></path>
+        </g>
+      </svg>
+
+
+    </div>
+
+    <div>
+      <h5 class="mb-2 font-bold"><a href="#models">Models</a></h5>
+      <ul class="mb-2 ml-1">
+
+        <li class="mb-4">
+
+          <div class="font-semibold text-gray-700">
+            <a href="#model-AuthUser">AuthUser</a>
+          </div>
+
+          <div class="mt-1 ml-2">
+            <div class="mb-1 font-medium text-gray-600"><a href="#model-AuthUser-fields">Fields</a></div>
+            <ul class="pl-3 ml-1 border-l-2 border-gray-400">
+              <li><a href="#model-AuthUser-id">id</a></li>
+              <li><a href="#model-AuthUser-createdAt">createdAt</a></li>
+              <li><a href="#model-AuthUser-updatedAt">updatedAt</a></li>
+              <li><a href="#model-AuthUser-refreshToken">refreshToken</a></li>
+              <li><a href="#model-AuthUser-phoneNumber">phoneNumber</a></li>
+              <li><a href="#model-AuthUser-username">username</a></li>
+              <li><a href="#model-AuthUser-isPhoneConfirmed">isPhoneConfirmed</a></li>
+            </ul>
+          </div>
+          <div class="mt-2 ml-2">
+            <div class="mb-1 font-medium text-gray-600"><a href="#model-AuthUser-operations">Operations</a></div>
+            <ul class="pl-3 ml-1 border-l-2 border-gray-400">
+              <li><a href="#model-AuthUser-findUnique">findUnique</a></li>
+              <li><a href="#model-AuthUser-findFirst">findFirst</a></li>
+              <li><a href="#model-AuthUser-findMany">findMany</a></li>
+              <li><a href="#model-AuthUser-create">create</a></li>
+              <li><a href="#model-AuthUser-delete">delete</a></li>
+              <li><a href="#model-AuthUser-update">update</a></li>
+              <li><a href="#model-AuthUser-deleteMany">deleteMany</a></li>
+              <li><a href="#model-AuthUser-updateMany">updateMany</a></li>
+              <li><a href="#model-AuthUser-upsert">upsert</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+      <h5 class="mt-12 mb-2 font-bold"><a href="#types">Types</a></h5>
+      <ul class="mb-2 ml-1">
+        <li class="mb-4">
+          <div class="font-semibold text-gray-700">
+            <a href="#input-types">Input Types</a>
+          </div>
+          <ul class="pl-3 ml-1 border-l-2 border-gray-400">
+            <li><a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a></li>
+            <li><a href="#type-inputType-AuthUserOrderByWithRelationInput">AuthUserOrderByWithRelationInput</a></li>
+            <li><a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a></li>
+            <li><a href="#type-inputType-AuthUserOrderByWithAggregationInput">AuthUserOrderByWithAggregationInput</a>
+            </li>
+            <li><a
+              href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput</a>
+            </li>
+            <li><a href="#type-inputType-AuthUserCreateInput">AuthUserCreateInput</a></li>
+            <li><a href="#type-inputType-AuthUserUncheckedCreateInput">AuthUserUncheckedCreateInput</a></li>
+            <li><a href="#type-inputType-AuthUserUpdateInput">AuthUserUpdateInput</a></li>
+            <li><a href="#type-inputType-AuthUserUncheckedUpdateInput">AuthUserUncheckedUpdateInput</a></li>
+            <li><a href="#type-inputType-AuthUserCreateManyInput">AuthUserCreateManyInput</a></li>
+            <li><a href="#type-inputType-AuthUserUpdateManyMutationInput">AuthUserUpdateManyMutationInput</a></li>
+            <li><a href="#type-inputType-AuthUserUncheckedUpdateManyInput">AuthUserUncheckedUpdateManyInput</a></li>
+            <li><a href="#type-inputType-StringFilter">StringFilter</a></li>
+            <li><a href="#type-inputType-DateTimeFilter">DateTimeFilter</a></li>
+            <li><a href="#type-inputType-StringNullableFilter">StringNullableFilter</a></li>
+            <li><a href="#type-inputType-BoolFilter">BoolFilter</a></li>
+            <li><a href="#type-inputType-AuthUserCountOrderByAggregateInput">AuthUserCountOrderByAggregateInput</a></li>
+            <li><a href="#type-inputType-AuthUserMaxOrderByAggregateInput">AuthUserMaxOrderByAggregateInput</a></li>
+            <li><a href="#type-inputType-AuthUserMinOrderByAggregateInput">AuthUserMinOrderByAggregateInput</a></li>
+            <li><a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-DateTimeWithAggregatesFilter">DateTimeWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-StringNullableWithAggregatesFilter">StringNullableWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-BoolWithAggregatesFilter">BoolWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a></li>
+            <li><a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a></li>
+            <li><a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a>
+            </li>
+            <li><a href="#type-inputType-BoolFieldUpdateOperationsInput">BoolFieldUpdateOperationsInput</a></li>
+            <li><a href="#type-inputType-NestedStringFilter">NestedStringFilter</a></li>
+            <li><a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a></li>
+            <li><a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a></li>
+            <li><a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a></li>
+            <li><a href="#type-inputType-NestedStringWithAggregatesFilter">NestedStringWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-NestedIntFilter">NestedIntFilter</a></li>
+            <li><a href="#type-inputType-NestedDateTimeWithAggregatesFilter">NestedDateTimeWithAggregatesFilter</a></li>
+            <li><a href="#type-inputType-NestedStringNullableWithAggregatesFilter">NestedStringNullableWithAggregatesFilter</a>
+            </li>
+            <li><a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a></li>
+            <li><a href="#type-inputType-NestedBoolWithAggregatesFilter">NestedBoolWithAggregatesFilter</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <div class="font-semibold text-gray-700">
+            <a href="#output-types">Output Types</a>
+          </div>
+          <ul class="pl-3 ml-1 border-l-2 border-gray-400">
+            <li><a href="#type-outputType-AuthUser">AuthUser</a></li>
+            <li><a href="#type-outputType-AggregateAuthUser">AggregateAuthUser</a></li>
+            <li><a href="#type-outputType-AuthUserGroupByOutputType">AuthUserGroupByOutputType</a></li>
+            <li><a href="#type-outputType-AffectedRowsOutput">AffectedRowsOutput</a></li>
+            <li><a href="#type-outputType-AuthUserCountAggregateOutputType">AuthUserCountAggregateOutputType</a></li>
+            <li><a href="#type-outputType-AuthUserMinAggregateOutputType">AuthUserMinAggregateOutputType</a></li>
+            <li><a href="#type-outputType-AuthUserMaxAggregateOutputType">AuthUserMaxAggregateOutputType</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="w-full p-4 bg-white">
+
+    <div class="mb-8">
+      <h1 class="text-3xl text-gray-800" id="models">Models</h1>
+
+      <div class="px-4 mb-4">
+        <h2 class="text-2xl" id="model-AuthUser">AuthUser</h2>
+
+
+        <div class="px-4 mt-4">
+          <h3 class="mb-2 text-xl" id="model-AuthUser-fields">Fields</h3>
+          <div class="px-2 mb-4">
+            <table class="table-auto">
+              <thead>
+              <tr>
+                <th class="px-4 py-2 border">Name</th>
+                <th class="px-4 py-2 border">Type</th>
+                <th class="px-4 py-2 border">Attributes</th>
+                <th class="px-4 py-2 border">Required</th>
+                <th class="px-4 py-2 border">Comment</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr id="model-AuthUser-id">
+                <td class="px-4 py-2 border">
+                  id
+                </td>
+                <td class="px-4 py-2 border">
+                  String
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li><strong>@id</strong></li>
+                    <li><strong>@default(cuid())</strong></li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-createdAt">
+                <td class="px-4 py-2 border">
+                  createdAt
+                </td>
+                <td class="px-4 py-2 border">
+                  DateTime
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li><strong>@default(now())</strong></li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-updatedAt">
+                <td class="px-4 py-2 border">
+                  updatedAt
+                </td>
+                <td class="px-4 py-2 border">
+                  DateTime
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li><strong>@updatedAt</strong></li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-refreshToken">
+                <td class="px-4 py-2 border">
+                  refreshToken
+                </td>
+                <td class="px-4 py-2 border">
+                  String?
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li> -</li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  No
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-phoneNumber">
+                <td class="px-4 py-2 border">
+                  phoneNumber
+                </td>
+                <td class="px-4 py-2 border">
+                  String
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li> -</li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-username">
+                <td class="px-4 py-2 border">
+                  username
+                </td>
+                <td class="px-4 py-2 border">
+                  String
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li> -</li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              <tr id="model-AuthUser-isPhoneConfirmed">
+                <td class="px-4 py-2 border">
+                  isPhoneConfirmed
+                </td>
+                <td class="px-4 py-2 border">
+                  Boolean
+                </td>
+                <td class="px-4 py-2 border">
+                  <ul>
+                    <li><strong>@default(false)</strong></li>
+                  </ul>
+                </td>
+                <td class="px-4 py-2 border">
+                  <strong>Yes</strong>
+                </td>
+                <td class="px-4 py-2 border">
+                  -
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr class="my-8">
+        <div class="px-4 mt-4">
+          <h3 class="mb-2 text-xl" id="model-AuthUser-operations">Operations</h3>
+          <div class="px-2 mb-4">
+
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-findUnique">findUnique</h4>
+              <p>Find zero or one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Get one AuthUser</span>
+<span class="token keyword">const</span> authUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">findUnique</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide filter here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                No
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-findFirst">findFirst</h4>
+              <p>Find first AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Get one AuthUser</span>
+<span class="token keyword">const</span> authUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">findFirst</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide filter here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    orderBy
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserOrderByWithRelationInput">AuthUserOrderByWithRelationInput[]</a> |
+                    <a href="#type-inputType-AuthUserOrderByWithRelationInput">AuthUserOrderByWithRelationInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    cursor
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    take
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    skip
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    distinct
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserScalarFieldEnum">AuthUserScalarFieldEnum[]</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                No
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-findMany">findMany</h4>
+              <p>Find zero or more AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Get all AuthUser</span>
+<span class="token keyword">const</span> AuthUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">findMany</span><span class="token punctuation">(</span><span
+                        class="token punctuation">)</span>
+<span class="token comment">// Get first 10 AuthUser</span>
+<span class="token keyword">const</span> AuthUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">findMany</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span> <span
+                        class="token literal-property property">take</span><span class="token operator">:</span> <span
+                        class="token number">10</span> <span class="token punctuation">}</span><span
+                        class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    orderBy
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserOrderByWithRelationInput">AuthUserOrderByWithRelationInput[]</a> |
+                    <a href="#type-inputType-AuthUserOrderByWithRelationInput">AuthUserOrderByWithRelationInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    cursor
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    take
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    skip
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    distinct
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserScalarFieldEnum">AuthUserScalarFieldEnum[]</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                Yes
+              </div>
+              <div><strong>List: </strong>
+                Yes
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-create">create</h4>
+              <p>Create one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Create one AuthUser</span>
+<span class="token keyword">const</span> AuthUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">create</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... data to create a AuthUser</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    data
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserCreateInput">AuthUserCreateInput</a> | <a
+                    href="#type-inputType-AuthUserUncheckedCreateInput">AuthUserUncheckedCreateInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                Yes
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-delete">delete</h4>
+              <p>Delete one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Delete one AuthUser</span>
+<span class="token keyword">const</span> AuthUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">delete</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... filter to delete one AuthUser</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                No
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-update">update</h4>
+              <p>Update one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Update one AuthUser</span>
+<span class="token keyword">const</span> authUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">update</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide filter here</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide data here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    data
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserUpdateInput">AuthUserUpdateInput</a> | <a
+                    href="#type-inputType-AuthUserUncheckedUpdateInput">AuthUserUncheckedUpdateInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                No
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-deleteMany">deleteMany</h4>
+              <p>Delete zero or more AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token comment">// Delete a few AuthUser</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span> <span
+                        class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">deleteMany</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide filter here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AffectedRowsOutput">AffectedRowsOutput</a></div>
+              <div><strong>Required: </strong>
+                Yes
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-updateMany">updateMany</h4>
+              <p>Update zero or one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span class="token keyword">const</span> <span
+                      class="token punctuation">{</span> count <span class="token punctuation">}</span> <span
+                      class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                      class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                      class="token function">updateMany</span><span class="token punctuation">(</span><span
+                      class="token punctuation">{</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide filter here</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... provide data here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    data
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserUpdateManyMutationInput">AuthUserUpdateManyMutationInput</a> | <a
+                    href="#type-inputType-AuthUserUncheckedUpdateManyInput">AuthUserUncheckedUpdateManyInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AffectedRowsOutput">AffectedRowsOutput</a></div>
+              <div><strong>Required: </strong>
+                Yes
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="mt-4">
+              <h4 class="mb-2 text-lg font-bold" id="model-AuthUser-upsert">upsert</h4>
+              <p>Create or update one AuthUser</p>
+              <div class="mb-2">
+                    <pre
+                      class="language-markup"
+                    ><code class=" language-javascript"><span
+                      class="token comment">// Update or create a AuthUser</span>
+<span class="token keyword">const</span> authUser <span class="token operator">=</span> <span class="token keyword">await</span> prisma<span
+                        class="token punctuation">.</span>authUser<span class="token punctuation">.</span><span
+                        class="token function">upsert</span><span class="token punctuation">(</span><span
+                        class="token punctuation">{</span>
+  <span class="token literal-property property">create</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... data to create a AuthUser</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">update</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... in case it already exists, update</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">where</span><span class="token operator">:</span> <span
+                        class="token punctuation">{</span>
+    <span class="token comment">// ... the filter for the AuthUser we want to update</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+              </div>
+              <h4 class="text-lg mb-2">Input</h4>
+              <table class="table-auto mb-2">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Required</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    where
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    create
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserCreateInput">AuthUserCreateInput</a> | <a
+                    href="#type-inputType-AuthUserUncheckedCreateInput">AuthUserUncheckedCreateInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    update
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserUpdateInput">AuthUserUpdateInput</a> | <a
+                    href="#type-inputType-AuthUserUncheckedUpdateInput">AuthUserUncheckedUpdateInput</a>
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+              <h4 class="text-lg mb-2">Output</h4>
+              <div><strong>Type: </strong> <a href="#type-outputType-AuthUser">AuthUser</a></div>
+              <div><strong>Required: </strong>
+                Yes
+              </div>
+              <div><strong>List: </strong>
+                No
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <h1 class="text-3xl" id="types">Types</h1>
+      <div>
+        <div class="ml-4">
+          <h3 class="mb-2 text-2xl font-normal" id="input-types">Input Types</h3>
+          <div class="ml-4">
+
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserWhereInput">AuthUserWhereInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    AND
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a> | <a
+                    href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    OR
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    NOT
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput</a> | <a
+                    href="#type-inputType-AuthUserWhereInput">AuthUserWhereInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringFilter">StringFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-DateTimeFilter">DateTimeFilter</a> | DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-DateTimeFilter">DateTimeFilter</a> | DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringNullableFilter">StringNullableFilter</a> | String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringFilter">StringFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringFilter">StringFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-BoolFilter">BoolFilter</a> | Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserOrderByWithRelationInput">
+                AuthUserOrderByWithRelationInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserWhereUniqueInput">AuthUserWhereUniqueInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserOrderByWithAggregationInput">
+                AuthUserOrderByWithAggregationInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserCountOrderByAggregateInput">AuthUserCountOrderByAggregateInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserMaxOrderByAggregateInput">AuthUserMaxOrderByAggregateInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserMinOrderByAggregateInput">AuthUserMinOrderByAggregateInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserScalarWhereWithAggregatesInput">
+                AuthUserScalarWhereWithAggregatesInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    AND
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput</a>
+                    | <a href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    OR
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    NOT
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput</a>
+                    | <a href="#type-inputType-AuthUserScalarWhereWithAggregatesInput">AuthUserScalarWhereWithAggregatesInput[]</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-DateTimeWithAggregatesFilter">DateTimeWithAggregatesFilter</a> | DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-DateTimeWithAggregatesFilter">DateTimeWithAggregatesFilter</a> | DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringNullableWithAggregatesFilter">StringNullableWithAggregatesFilter</a>
+                    | String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a> | String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-BoolWithAggregatesFilter">BoolWithAggregatesFilter</a> | Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserCreateInput">AuthUserCreateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserUncheckedCreateInput">
+                AuthUserUncheckedCreateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserUpdateInput">AuthUserUpdateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-BoolFieldUpdateOperationsInput">BoolFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserUncheckedUpdateInput">
+                AuthUserUncheckedUpdateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-BoolFieldUpdateOperationsInput">BoolFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserCreateManyInput">AuthUserCreateManyInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserUpdateManyMutationInput">
+                AuthUserUpdateManyMutationInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-BoolFieldUpdateOperationsInput">BoolFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserUncheckedUpdateManyInput">
+                AuthUserUncheckedUpdateManyInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-BoolFieldUpdateOperationsInput">BoolFieldUpdateOperationsInput</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-StringFilter">StringFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    mode
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-QueryMode">QueryMode</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-DateTimeFilter">DateTimeFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-StringNullableFilter">StringNullableFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    mode
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-QueryMode">QueryMode</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a> | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-BoolFilter">BoolFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserCountOrderByAggregateInput">
+                AuthUserCountOrderByAggregateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserMaxOrderByAggregateInput">
+                AuthUserMaxOrderByAggregateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-AuthUserMinOrderByAggregateInput">
+                AuthUserMinOrderByAggregateInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-SortOrder">SortOrder</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    mode
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-QueryMode">QueryMode</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-NestedStringWithAggregatesFilter">NestedStringWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-DateTimeWithAggregatesFilter">
+                DateTimeWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-NestedDateTimeWithAggregatesFilter">NestedDateTimeWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-StringNullableWithAggregatesFilter">
+                StringNullableWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    mode
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-QueryMode">QueryMode</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringNullableWithAggregatesFilter">NestedStringNullableWithAggregatesFilter</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-BoolWithAggregatesFilter">BoolWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-NestedBoolWithAggregatesFilter">NestedBoolWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-StringFieldUpdateOperationsInput">
+                StringFieldUpdateOperationsInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    set
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-DateTimeFieldUpdateOperationsInput">
+                DateTimeFieldUpdateOperationsInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    set
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NullableStringFieldUpdateOperationsInput">
+                NullableStringFieldUpdateOperationsInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    set
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-BoolFieldUpdateOperationsInput">
+                BoolFieldUpdateOperationsInput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    set
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedStringFilter">NestedStringFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a> | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedBoolFilter">NestedBoolFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedStringWithAggregatesFilter">
+                NestedStringWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a
+                    href="#type-inputType-NestedStringWithAggregatesFilter">NestedStringWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedIntFilter">NestedIntFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int | <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedDateTimeWithAggregatesFilter">
+                NestedDateTimeWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime | <a href="#type-inputType-NestedDateTimeWithAggregatesFilter">NestedDateTimeWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedStringNullableWithAggregatesFilter">
+                NestedStringNullableWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    contains
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    startsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    endsWith
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String | <a href="#type-inputType-NestedStringNullableWithAggregatesFilter">NestedStringNullableWithAggregatesFilter</a>
+                    | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    in
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    notIn
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    lte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    gte
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int | <a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a> | Null
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-inputType-NestedBoolWithAggregatesFilter">
+                NestedBoolWithAggregatesFilter</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    equals
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    not
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean | <a
+                    href="#type-inputType-NestedBoolWithAggregatesFilter">NestedBoolWithAggregatesFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedIntFilter">NestedIntFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-inputType-NestedBoolFilter">NestedBoolFilter</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+        <div class="ml-4">
+          <h3 class="mb-2 text-2xl font-normal" id="output-types">Output Types</h3>
+          <div class="ml-4">
+
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AuthUser">AuthUser</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AggregateAuthUser">AggregateAuthUser</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserCountAggregateOutputType">AuthUserCountAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserMinAggregateOutputType">AuthUserMinAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserMaxAggregateOutputType">AuthUserMaxAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AuthUserGroupByOutputType">AuthUserGroupByOutputType</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserCountAggregateOutputType">AuthUserCountAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _min
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserMinAggregateOutputType">AuthUserMinAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _max
+                  </td>
+                  <td class="px-4 py-2 border">
+                    <a href="#type-outputType-AuthUserMaxAggregateOutputType">AuthUserMaxAggregateOutputType</a>
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AffectedRowsOutput">AffectedRowsOutput</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    count
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AuthUserCountAggregateOutputType">
+                AuthUserCountAggregateOutputType</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    _all
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Int
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    <strong>Yes</strong>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AuthUserMinAggregateOutputType">
+                AuthUserMinAggregateOutputType</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h3 class="mb-2 text-xl" id="type-outputType-AuthUserMaxAggregateOutputType">
+                AuthUserMaxAggregateOutputType</h3>
+              <table class="table-auto">
+                <thead>
+                <tr>
+                  <th class="px-4 py-2 border">Name</th>
+                  <th class="px-4 py-2 border">Type</th>
+                  <th class="px-4 py-2 border">Nullable</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    id
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    createdAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    updatedAt
+                  </td>
+                  <td class="px-4 py-2 border">
+                    DateTime
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    refreshToken
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    phoneNumber
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    username
+                  </td>
+                  <td class="px-4 py-2 border">
+                    String
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-4 py-2 border">
+                    isPhoneConfirmed
+                  </td>
+                  <td class="px-4 py-2 border">
+                    Boolean
+                  </td>
+
+                  <td class="px-4 py-2 border">
+                    No
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div>
+  </div>
+</div>
+</body>
+</html>

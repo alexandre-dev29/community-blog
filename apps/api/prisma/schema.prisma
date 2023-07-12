@@ -1,0 +1,96 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator docs {
+  provider = "node node_modules/prisma-docs-generator"
+  output   = "../docs"
+}
+
+generator prismaClassGenerator {
+  provider      = "prisma-class-generator"
+  output        = "../types/generated"
+  dryRun        = false
+  makeIndexFile = true
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id           String   @id @default(cuid())
+  username     String?  @db.VarChar(20)
+  fullName     String   @db.VarChar(60)
+  phoneNumber  String?  @db.VarChar(40)
+  password     String   @db.Text
+  avatarImage  String?  @db.Text
+  email        String   @db.VarChar(70)
+  biography    String?  @db.Text
+  userTitle    String?  @db.Text
+  refreshToken String?
+  role         Role     @default(Editor)
+  Posts        Posts[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Categories {
+  id                  String   @id @default(cuid())
+  categoryName        String
+  categoryDescription String   @db.Text
+  mainImageUrl        String   @db.Text
+  categorySlug        String   @unique
+  posts               Posts[]
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+model Posts {
+  id              String      @id @default(cuid())
+  postTitle       String
+  postDescription String      @db.Text
+  postViewCount   Int         @default(0)
+  postTotalLikes  Int         @default(0)
+  postTotalShares Int         @default(0)
+  postReadTime    Int         @default(0)
+  postSlug        String      @unique
+  postMainImage   String      @db.Text
+  authorId        String
+  Tags            String[]
+  isPublished     Boolean     @default(false)
+  isFeatured      Boolean     @default(false)
+  publishedAt     DateTime?
+  postContent     String      @db.Text
+  author          Users       @relation(fields: [authorId], references: [id])
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  Category        Categories? @relation(fields: [categoryId], references: [id])
+  categoryId      String?
+}
+
+model Subscribers {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserVisites {
+  id        String   @id @default(cuid())
+  sessionId String
+  ipAddress String
+  device    String
+  location  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  Admin
+  Editor
+}
