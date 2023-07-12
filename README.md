@@ -1,81 +1,62 @@
-# Turborepo starter
+# Community Blog
 
-This is an official starter Turborepo.
+This project is a [NX project](https://nx.dev/) for a complete blog to publish your communioty articles, with tone of
+features and other that are comming.
+The backend and the front are in the same project😂 i prefered to use monorepo for this and the obvious choice for me was
+NX because of the great developer experience.
 
-## Using this example
+The frontend is built using [NextJs 13 with App Directory](https://nextjs.org/) and for the UI i have
+used [ShadCdn](https://ui.shadcn.com/) for his simple and beautifull design and also highly customizable.
 
-Run the following command:
+Other library are used for the frontend such as , [TIPTAP](https://tiptap.dev/) for writing articles, and refine for
+😏😏 many thnks 😂
 
-```sh
-npx create-turbo@latest
+The Backend is written in [NESTJS](https://nestjs.com/) with [prisma](http://prisma.io) has ORM of choice 😋😋 , i also
+use [Castl](https://casl.js.org/) for authorization and JWT for authentication process
+
+the blog has the admin part or editor to publish and manage their article with a couple of other feature that are admin
+only such as create a new editor and management users.
+
+## How to getting start with the project
+
+First of all the project was configure with POSTGRES for the database part but can work with any SQL or NOSQL Thanks to
+Prrisma.
+
+first let’s clone the project , hope that git is already install on your machine 😑😑😑
+
+```bash
+git clone https://github.com/alexandre-dev29/community-blog.git
 ```
 
-## What's inside?
+Then See the differents .env.example in the root of the projectt and create a .env file with the correct values for you
+situation.
 
-This Turborepo includes the following packages/apps:
+Once done, time for the famous :
 
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```bash
+npm install  #if you are using npm
+yarn install # if you are using yarn
+pnpm install #if you aree using pnpm(pnpm was used for this project, don't ask me why 🙄)
 ```
 
-### Develop
+Once done, run
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
+```bash
+npx prisma migrate dev
 ```
 
-### Remote Caching
+This will apply all the migration the the database that you configured in the .env file
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+once finish , now the fun part
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+```bash
+pnpm turbo run serve # or yarn nx run api:serve if you are using yarn
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+🥳🥳🥳🥳🥳 now you can start publish articles and adding users
+with the seeding a default user has been added you can use those credential to login and start work.
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+### Thanks
 
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+For any question fill free to ask and to contribute and most important don’t forget to give a little Star ⭐ to this
+repo.
