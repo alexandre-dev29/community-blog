@@ -49,9 +49,9 @@ export function FeaturedArticle(props: { post: PostsResponse }) {
             {props.post.featuredArticle.data.author?.fullName}
           </Link>
 
-          <p className="text-muted-foreground">{`${new Date(
+          <span className="mt-0 text-muted-foreground">{`${new Date(
             `${props.post.featuredArticle.data.publishedAt}`
-          ).toLocaleDateString()}`}</p>
+          ).toLocaleDateString()}`}</span>
         </div>
       </div>
       <div

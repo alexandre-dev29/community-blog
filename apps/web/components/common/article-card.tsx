@@ -70,9 +70,9 @@ const ArticleCard = ({
         ) : (
           ""
         )}
-        <p className={"text-sm text-muted-foreground"}>{`${new Date(
+        <span className={"text-sm text-muted-foreground"}>{`${new Date(
           `${currentPost.publishedAt}`
-        ).toLocaleDateString()}`}</p>
+        ).toLocaleDateString()}`}</span>
       </CardFooter>
     </Card>
   )

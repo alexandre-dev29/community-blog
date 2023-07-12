@@ -1,5 +1,7 @@
-import {API_URL, axiosInstance, IPost} from '@community-blog/refine-config';
 import {getServerSideSitemap} from 'next-sitemap';
+import {axiosInstance} from "@/lib/refine/axiosInstance";
+import {IPost} from "@/types/posts";
+import {API_URL} from "@/config/constants";
 
 export async function GET(request: Request) {
   // Method to source urls from cms

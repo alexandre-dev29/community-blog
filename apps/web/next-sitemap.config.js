@@ -1,7 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  sourceDir: 'dist/blog/.next',
-  outDir: 'dist/blog/public',
   siteUrl: process.env.SITE_URL || 'http://localhost:3000',
   generateRobotsTxt: true, // (optional)
   exclude: [
