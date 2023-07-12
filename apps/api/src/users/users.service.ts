@@ -16,7 +16,7 @@ export class UsersService {
   ) {}
 
   create(createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+    return console.log(createUserDto);
   }
 
   findAll() {
