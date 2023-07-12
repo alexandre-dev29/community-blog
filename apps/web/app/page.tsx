@@ -1,39 +1,36 @@
-import Link from "next/link"
+import React from "react"
+import {cookies} from "next/headers"
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import {getAllPosts} from "@/lib/api-calls"
+import {Separator} from "@/components/ui/separator"
+import SiteCountReq from "@/components/SiteCountReq"
+import ArticleCard from "@/components/common/article-card"
+import {FeaturedArticle} from "@/components/common/featured-article"
+import {SiteHeader} from "@/components/site-header"
 
-export default function IndexPage() {
+export default async function IndexPage() {
+  const [post] = await Promise.all([getAllPosts(cookies().toString())])
+
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS.
-        </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Accessible and customizable components that you can copy and paste
-          into your apps. Free. Open Source. And Next.js 13 Ready.
-        </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-      </div>
-    </section>
+    <>
+      <SiteHeader/>
+      <section className="container grid grid-cols-12 items-center py-8  ">
+        <FeaturedArticle post={post}/>
+      </section>
+      <Separator/>
+      <section
+        className="container grid grid-cols-1 gap-x-8 gap-y-16 py-8 md:grid-cols-2 md:gap-x-12 lg:gap-x-16 xl:grid-cols-3">
+        {post.data.data
+          .filter((value) => value.isPublished)
+          .map((currentPost) => (
+            <ArticleCard
+              key={currentPost.id}
+              currentPost={currentPost}
+              withAuthor={true}
+            />
+          ))}
+      </section>
+      <SiteCountReq/>
+    </>
   )
 }

@@ -74,8 +74,225 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@layer utilities {
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute w-8 h-8 bg-muted rounded-full font-medium text-center text-base inline-flex items-center justify-center -indent-px;
+    @apply ml-[-41px];
+    content: counter(step);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+pre code {
+  padding: 1rem !important;
+  @apply rounded-lg my-4
+}
+
+figcaption {
+  @apply w-[80%] mx-auto
+}
+
+figure {
+  @apply my-4
+}
+
+figcaption p {
+  font-size: 15px !important;
+  font-style: italic;
+  @apply text-center text-muted text-sm;
+}
+
+.pre {
+  @apply border-x  bg-[#1e293b] dark:bg-[#1e293b];
+}
+
+. code {
+  @apply rounded-lg bg-transparent dark:bg-transparent p-0;
+}
+
+
+. img {
+  /* Don't apply styles to next/image */
+  @apply m-0;
+}
+
+.prose > :first-child {
+  /* Override removing top margin, causing layout shift */
+  margin-top: 1.25em !important;
+  margin-bottom: 1.25em !important;
+}
+
+/* Prism Styles */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.token.punctuation {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+pre > code {
+  display: grid;
+}
+
+html.light [data-theme="dark"] {
+  display: none;
+}
+
+code {
+  margin-top: 0 !important;
+}
+
+html.dark [data-theme="light"] {
+  display: none;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-green-500;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-purple-500;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-yellow-500;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-blue-500;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-pink-500;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-yellow-500;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  @apply text-[15px];
+}
+
+div [data-rehype-pretty-code-fragment] {
+  margin-top: 1rem;
+}
+
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+h1 {
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  @apply scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 ;
+}
+
+h3 {
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+h4 {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight
+}
+
+p {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.ProseMirror > * + * {
+
+  margin-top: 0.75em;
+}
+
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror img {
+  height: auto;
+  max-width: 100%;
+}
+
+.ProseMirror-selectednode {
+  outline: 3px solid #68cef8;
+}
+
+iframe {
+  min-width: 200px;
+  min-height: 500px;
+  display: block;
+  width: 100%;
+  outline: 0px solid transparent;
+}
+
+div[data-youtube-video] {
+  cursor: move;
+  padding-right: 24px;
+}
+

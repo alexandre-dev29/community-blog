@@ -1,6 +1,6 @@
 import { Injectable, NestMiddleware, Res } from '@nestjs/common';
-import { NextFunction, Request, Response } from 'express';
-import UAParser from 'ua-parser-js';
+import {NextFunction, Request, Response} from 'express';
+import * as UAParser from 'ua-parser-js';
 import * as geoip from 'geoip-lite';
 import { PrismaService } from '../prisma/prisma.service';
 import { RedisService } from './redis/redis.service';
