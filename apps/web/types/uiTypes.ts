@@ -1,8 +1,8 @@
-import {MDXRemoteSerializeResult} from "next-mdx-remote"
+import { MDXRemoteSerializeResult } from "next-mdx-remote"
 
-import {IPost} from "@/types/posts"
+import { IPost } from "@/types/posts"
 
-import {IUser} from "./users"
+import { IUser } from "./users"
 
 export enum ResponseTypeEnum {
   SUCCESS,
@@ -22,6 +22,7 @@ export interface IAuthResponse {
   responseType: ResponseTypeEnum
   message: string
   refreshToken: string
+  accessToken: string
   data: IUser
 }
 

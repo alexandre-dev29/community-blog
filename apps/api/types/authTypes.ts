@@ -1,6 +1,6 @@
-import {ApiProperty, PartialType} from '@nestjs/swagger';
-import {CookieOptions} from 'express';
-import {Users} from './generated/users';
+import { ApiProperty, PartialType } from '@nestjs/swagger';
+import { CookieOptions } from 'express';
+import { Users } from './generated/users';
 
 export enum ResponseTypeEnum {
   SUCCESS,
@@ -16,7 +16,7 @@ export const cookieOption: CookieOptions = {
   secure: true,
   sameSite: process.env.NODE_ENV === 'production' ? 'strict' : 'none',
   domain:
-      process.env.NODE_ENV === 'production' ? 'axelmwenze.dev' : 'localhost',
+    process.env.NODE_ENV === 'production' ? 'axelmwenze.dev' : 'localhost',
   maxAge: 24 * 60 * 60 * 1000,
   expires: new Date(new Date().setDate(new Date().getDate() + 1)),
 };

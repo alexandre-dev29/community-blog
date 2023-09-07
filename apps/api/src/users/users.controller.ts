@@ -51,7 +51,7 @@ export class UsersController {
   ): Promise<AuthResponse> {
     const values = await this.usersService.loginUser(loginDto);
     response.cookie('token', values.accessToken, cookieOption);
-    return { ...values, accessToken: '' };
+    return { ...values, accessToken: values.accessToken };
   }
 
   @Get()

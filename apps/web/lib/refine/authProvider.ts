@@ -1,23 +1,26 @@
-import {AuthBindings} from "@refinedev/core"
-import {deleteCookie} from "cookies-next"
+import { AuthBindings } from "@refinedev/core"
+import { deleteCookie } from "cookies-next"
 import nookies from "nookies"
 
-import {IAuthResponse, ResponseTypeEnum} from "@/types/uiTypes"
-import {API_URL} from "@/config/constants"
+import { IAuthResponse, ResponseTypeEnum } from "@/types/uiTypes"
+import { API_URL } from "@/config/constants"
 
-import {axiosInstance} from "./axiosInstance"
+import { axiosInstance } from "./axiosInstance"
 
 const httpClient = axiosInstance
 export const authProvider: AuthBindings = {
-  login: async ({email, password}) => {
-    const {data} = await httpClient.post<IAuthResponse>(
+  login: async ({ email, password }) => {
+    const { data } = await httpClient.post<IAuthResponse>(
       `${API_URL}/users/loginUser`,
       {
         email,
         password,
       },
-      {withCredentials: true}
+      { withCredentials: true }
     )
+    await axiosInstance.post("/auth", {
+      accessToken: data.accessToken,
+    })
 
     // let myHeaders = new Headers()
     // myHeaders.append("Content-Type", "application/json")
@@ -57,7 +60,10 @@ export const authProvider: AuthBindings = {
   },
   check: async (ctx: any) => {
     const cookies = nookies.get(ctx)
-    const otherCondition = process.env.NODE_ENV === "development" ? cookies["token"] !== undefined : true;
+    const otherCondition =
+      process.env.NODE_ENV === "development"
+        ? cookies["token"] !== undefined
+        : true
     if (cookies["auth"] !== undefined && otherCondition) {
       return {
         authenticated: true,
@@ -86,6 +92,6 @@ export const authProvider: AuthBindings = {
   },
   onError: async (error) => {
     console.error(error)
-    return {error}
+    return { error }
   },
 }
