@@ -57,7 +57,8 @@ export const authProvider: AuthBindings = {
   },
   check: async (ctx: any) => {
     const cookies = nookies.get(ctx)
-    if (cookies["auth"] !== undefined && cookies["token"] !== undefined) {
+    const otherCondition = process.env.NODE_ENV === "development" ? cookies["token"] !== undefined : true;
+    if (cookies["auth"] !== undefined && otherCondition) {
       return {
         authenticated: true,
       }
