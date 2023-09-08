@@ -52,9 +52,6 @@ export const dataProvider = (
       const firstValues = setCookieValue[0].split(";")[0]
       if (firstValues.includes("session-id")) {
         sessionId = firstValues.split("=")[1]
-        const response = await axiosInstance.post("/auth/session", {
-          sessionId: sessionId,
-        })
       }
     }
 
@@ -206,12 +203,6 @@ export const dataProvider = (
       const firstValues = setCookieValue[0].split(";")[0]
       if (firstValues.includes("session-id")) {
         sessionId = firstValues.split("=")[1]
-        await axiosInstance.post(
-          `${process.env.NEXT_PUBLIC_FRONT_URL}/auth/session`,
-          {
-            sessionId: sessionId,
-          }
-        )
       }
     }
 
