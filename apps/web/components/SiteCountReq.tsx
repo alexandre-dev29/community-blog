@@ -2,11 +2,16 @@
 
 import React from "react"
 
-import {API_URL} from "@/config/constants"
-import {axiosInstance} from "@/lib/refine/axiosInstance"
+import { IPost } from "@/types/posts"
+import { API_URL } from "@/config/constants"
+import { axiosInstance } from "@/lib/refine/axiosInstance"
+import { dataProvider } from "@/lib/refine/dataProvider"
 
 const SiteCountReq = () => {
-  axiosInstance.get(`${API_URL}/posts/countVisit/main`)
+  dataProvider(API_URL, axiosInstance).custom<IPost[]>({
+    url: `${API_URL}/posts/countVisit/main`,
+    method: "get",
+  })
   return <></>
 }
 
