@@ -27,7 +27,7 @@ export class PostCountMiddleware implements NestMiddleware {
       sessionId = `${crypto.getRandomValues(new Uint32Array(1))[0]}`;
       res.cookie('session-id', sessionId, {
         ...cookieOption,
-        maxAge: 48 * 60 * 60 * 1000,
+        maxAge: 24 * 60 * 60 * 1000,
         httpOnly: false,
       });
     }

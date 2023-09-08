@@ -18,10 +18,11 @@ export async function POST(request: Request) {
   const cookieConstruct = cookie.serialize("session-id", `${sessionId}`, {
     httpOnly: true,
     secure: true,
+    path: "/",
     sameSite: process.env.NODE_ENV === "production" ? "strict" : "none",
     domain:
       process.env.NODE_ENV === "production" ? "axelmwenze.dev" : "localhost",
-    maxAge: 48 * 60 * 60 * 1000,
+    maxAge: 24 * 60 * 60 * 1000,
   })
   return new Response("verrrrryyyyyyyyyy goooooodddd", {
     status: 200,
