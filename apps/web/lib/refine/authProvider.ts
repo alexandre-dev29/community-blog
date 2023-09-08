@@ -53,6 +53,7 @@ export const authProvider: AuthBindings = {
   logout: async () => {
     deleteCookie("auth")
     await httpClient.post<IAuthResponse>(`${API_URL}/users/logoutUser`)
+    await axiosInstance.put("/auth")
     return {
       success: true,
       redirectTo: "/auth/login",
