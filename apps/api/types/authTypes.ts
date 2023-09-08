@@ -17,7 +17,6 @@ export const cookieOption: CookieOptions = {
   sameSite: process.env.NODE_ENV === 'production' ? 'strict' : 'none',
   domain:
     process.env.NODE_ENV === 'production' ? 'axelmwenze.dev' : 'localhost',
-  maxAge: 24 * 60 * 60 * 1000,
   expires: new Date(new Date().setDate(new Date().getDate() + 1)),
 };
 

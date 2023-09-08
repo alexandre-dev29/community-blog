@@ -15,6 +15,7 @@ export async function POST(request: Request) {
       sessionId = firstValues.split("=")[1]
     }
   }
+  const currentDate = new Date()
   const cookieConstruct = cookie.serialize("session-id", `${sessionId}`, {
     httpOnly: true,
     secure: true,
@@ -22,7 +23,7 @@ export async function POST(request: Request) {
     sameSite: process.env.NODE_ENV === "production" ? "strict" : "none",
     domain:
       process.env.NODE_ENV === "production" ? "axelmwenze.dev" : "localhost",
-    maxAge: 24 * 60 * 60 * 1000,
+    expires: new Date(currentDate.setMinutes(currentDate.getMinutes() + 60)),
   })
   return new Response("verrrrryyyyyyyyyy goooooodddd", {
     status: 200,
