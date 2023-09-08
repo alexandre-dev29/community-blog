@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware, Res } from '@nestjs/common';
-import {NextFunction, Request, Response} from 'express';
+import { NextFunction, Request, Response } from 'express';
 import * as UAParser from 'ua-parser-js';
 import * as geoip from 'geoip-lite';
 import { PrismaService } from '../prisma/prisma.service';
@@ -25,7 +25,11 @@ export class PostCountMiddleware implements NestMiddleware {
       // Generate a new session ID if the user doesn't have one yet
 
       sessionId = `${crypto.getRandomValues(new Uint32Array(1))[0]}`;
-      res.cookie('session-id', sessionId, { ...cookieOption, maxAge: 3600000 });
+      res.cookie('session-id', sessionId, {
+        ...cookieOption,
+        maxAge: 3600000,
+        httpOnly: false,
+      });
     }
     this.redisService
       .getValue(`visit:${sessionId}`)
