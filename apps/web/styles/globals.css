@@ -79,6 +79,10 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  ::selection{
+    @apply text-white bg-teal-700;
+  }
+
 }
 
 @layer utilities {
@@ -160,6 +164,7 @@ html.light [data-theme="dark"] {
 
 code {
   margin-top: 0 !important;
+  overflow-x: auto;
 }
 
 html.dark [data-theme="light"] {
@@ -213,6 +218,7 @@ html.dark [data-theme="light"] {
 code[class*='language-'],
 pre[class*='language-'] {
   @apply text-[15px];
+
 }
 
 div [data-rehype-pretty-code-fragment] {

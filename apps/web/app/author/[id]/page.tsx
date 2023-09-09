@@ -1,13 +1,19 @@
 import React from "react"
-import {cookies} from "next/headers"
+import { Metadata } from "next"
+import { cookies } from "next/headers"
 
-import {getCurrentUserDatas} from "@/lib/api-calls"
-import {Separator} from "@/components/ui/separator"
+import { IUser } from "@/types/users"
+import { API_URL } from "@/config/constants"
+import { GenerateMetaDataForAuthor } from "@/lib/GenerateMetaData"
+import { getCurrentUserDatas } from "@/lib/api-calls"
+import { axiosInstance } from "@/lib/refine/axiosInstance"
+import { dataProvider } from "@/lib/refine/dataProvider"
+import { Separator } from "@/components/ui/separator"
 import ArticleCard from "@/components/common/article-card"
 import CustomMainImage from "@/components/images/custom-main-image"
 
-export default async function Index({params}: { params: { id: string } }) {
-  const {userData, mainImagePreview} = await getCurrentUserDatas(
+export default async function Index({ params }: { params: { id: string } }) {
+  const { userData, mainImagePreview } = await getCurrentUserDatas(
     params.id,
     cookies().toString()
   )
@@ -58,7 +64,7 @@ export default async function Index({params}: { params: { id: string } }) {
           </p>
         </div>
       </section>
-      <Separator/>
+      <Separator />
 
       <section className={"container mx-auto mt-12 w-11/12 xl:w-[85%]"}>
         <div
@@ -77,4 +83,22 @@ export default async function Index({params}: { params: { id: string } }) {
       </section>
     </div>
   )
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string }
+}): Promise<Metadata> {
+  const currentPost = await dataProvider(
+    API_URL,
+    axiosInstance,
+    cookies().toString()
+  ).custom<IUser>({
+    url: `${API_URL}/users/getUser/getUserByIdForAuthor`,
+    method: "get",
+    query: { id: `${params.id}` },
+  })
+
+  return GenerateMetaDataForAuthor({ userDatas: currentPost.data })
 }

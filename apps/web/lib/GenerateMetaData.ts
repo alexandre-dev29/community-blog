@@ -1,13 +1,14 @@
-import {Metadata} from "next"
+import { Metadata } from "next"
 
-import {IPost} from "@/types/posts"
-import {FRONT_URL} from "@/config/constants"
-import {siteConfig} from "@/config/site"
+import { IPost } from "@/types/posts"
+import { IUser } from "@/types/users"
+import { FRONT_URL } from "@/config/constants"
+import { siteConfig } from "@/config/site"
 
 export default function GenerateMetaData({
-                                           postData,
-                                           isMainPage,
-                                         }: {
+  postData,
+  isMainPage,
+}: {
   isMainPage: boolean
   postData?: IPost
 }): Metadata {
@@ -15,7 +16,7 @@ export default function GenerateMetaData({
     return {
       title: `${siteConfig.name}`,
       description: "This this the community blog description",
-      authors: [{name: "Axel Mwenze", url: "axelmwenze.dev"}],
+      authors: [{ name: "Axel Mwenze", url: "axelmwenze.dev" }],
       viewport: {
         minimumScale: 1,
         width: "device-width",
@@ -97,5 +98,69 @@ export default function GenerateMetaData({
         ],
       },
     }
+  }
+}
+export function GenerateMetaDataForAuthor({
+  userDatas,
+}: {
+  userDatas?: IUser
+}): Metadata {
+  if (!userDatas) {
+    return {}
+  }
+  return {
+    title: `${userDatas.fullName}  | ${siteConfig.name}`,
+    keywords: userDatas.fullName.split(" "),
+    viewport: {
+      minimumScale: 1,
+      width: "device-width",
+      initialScale: 1,
+      maximumScale: 6,
+    },
+    authors: [
+      {
+        name: userDatas.fullName,
+        url: `${FRONT_URL}/author/${userDatas?.id}`,
+      },
+    ],
+    description: userDatas.biography,
+    twitter: {
+      title: userDatas.fullName,
+      description: userDatas.biography,
+      images: [`${userDatas.avatarImage}`],
+      card: "summary_large_image",
+      site: `${siteConfig.name}`,
+      creator: userDatas.fullName,
+    },
+    creator: userDatas.fullName,
+    category: "article",
+    publisher: userDatas.fullName,
+    robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      "max-image-preview": "large",
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: true,
+        "max-image-preview": "large",
+      },
+    },
+    openGraph: {
+      siteName: siteConfig.name,
+      title: userDatas.fullName,
+      description: userDatas.fullName,
+      url: `${FRONT_URL}/post/${userDatas.fullName}`,
+      type: "article",
+      images: [
+        {
+          url: `${userDatas.avatarImage}`,
+          width: 1200,
+          height: 650,
+          alt: userDatas.fullName,
+        },
+      ],
+    },
   }
 }
