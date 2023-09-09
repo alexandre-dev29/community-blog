@@ -1,15 +1,14 @@
-import {cookies} from "next/headers"
-import {GetListResponse} from "@refinedev/core"
+import { GetListResponse } from "@refinedev/core"
 import matter from "gray-matter"
 import lqipModern from "lqip-modern"
 
-import {ICategory} from "@/types/categories"
-import {IPost} from "@/types/posts"
-import {IUser} from "@/types/users"
-import {API_URL} from "@/config/constants"
+import { ICategory } from "@/types/categories"
+import { IPost } from "@/types/posts"
+import { IUser } from "@/types/users"
+import { API_URL } from "@/config/constants"
 import GenerateMdxSource from "@/lib/GenerateMdxSource"
-import {axiosInstance} from "@/lib/refine/axiosInstance"
-import {dataProvider} from "@/lib/refine/dataProvider"
+import { axiosInstance } from "@/lib/refine/axiosInstance"
+import { dataProvider } from "@/lib/refine/dataProvider"
 
 export type PostsResponse = {
   data: GetListResponse<IPost>
@@ -63,7 +62,7 @@ export async function getAllPostsForSearch(
   })
 
   return allPosts.data.map((value) => {
-    return {title: value.postTitle, slug: value.postSlug}
+    return { title: value.postTitle, slug: value.postSlug }
   })
 }
 
@@ -79,7 +78,7 @@ export async function getAllCategories(
     method: "get",
   })
   return allCategories.data.map((value) => {
-    return {title: value.categoryName, slug: value.categorySlug}
+    return { title: value.categoryName, slug: value.categorySlug }
   })
 }
 
@@ -91,9 +90,9 @@ export async function getCurrentPostsDatas(slug: string, cookies: string) {
   ).custom<IPost>({
     url: `${API_URL}/posts/getPosts/getPostsBySlug`,
     method: "get",
-    query: {slug: `${slug}`},
+    query: { slug: `${slug}` },
   })
-  const {content, data} = matter(currentPost.data.postContent)
+  const { content, data } = matter(currentPost.data.postContent)
   const mdxSource = await GenerateMdxSource(content, data)
 
   return {
@@ -108,9 +107,9 @@ export async function getCurrentUserDatas(id: string, cookies: string) {
     axiosInstance,
     cookies
   ).custom<IUser>({
-    url: `${API_URL}/users/getUser/getUserById`,
+    url: `${API_URL}/users/getUser/getUserByIdForAuthor`,
     method: "get",
-    query: {id: `${id}`},
+    query: { id: `${id}` },
   })
 
   let previewImage = undefined
@@ -129,7 +128,7 @@ export async function getCurrentCategoryDatas(slug: string, cookies: string) {
   return await dataProvider(API_URL, axiosInstance, cookies).custom<ICategory>({
     url: `${API_URL}/categories/getCategory/getCategoryBySlug`,
     method: "get",
-    query: {slug: `${slug}`},
+    query: { slug: `${slug}` },
   })
 }
 

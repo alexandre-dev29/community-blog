@@ -71,6 +71,10 @@ export class UsersController {
   postBySlug(@Query('id') id: string) {
     return this.usersService.findOne(id);
   }
+  @Get('getUser/getUserByIdForAuthor')
+  getUsersInformation(@Query('id') id: string) {
+    return this.usersService.findOneForAuthor(id);
+  }
 
   @Get(':id')
   @UseGuards(MyAuthGuard, AccessGuard)

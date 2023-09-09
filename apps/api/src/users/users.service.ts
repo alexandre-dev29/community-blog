@@ -31,6 +31,19 @@ export class UsersService {
 
     return { ...currentUser, refreshToken: '', password: '' };
   }
+  async findOneForAuthor(id: string) {
+    const currentUser = await this.prismaService.users.findFirst({
+      where: { id: id },
+      include: { Posts: true },
+    });
+
+    return {
+      ...currentUser,
+      refreshToken: '',
+      password: '',
+      Posts: currentUser.Posts.filter((a) => a.isPublished),
+    };
+  }
 
   update(id: string, updateUserDto: UpdateUserDto) {
     return this.prismaService.users.update({
