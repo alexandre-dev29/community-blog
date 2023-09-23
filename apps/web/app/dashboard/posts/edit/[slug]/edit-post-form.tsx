@@ -1,21 +1,21 @@
 "use client"
 
-import React, {useState} from "react"
-import {useRouter} from "next/navigation"
-import {zodResolver} from "@hookform/resolvers/zod"
-import {useUpdate} from "@refinedev/core"
-import {useEditor} from "@tiptap/react"
-import {Loader2, Save, XOctagon} from "lucide-react"
-import {useForm} from "react-hook-form"
+import React, { useState } from "react"
+import { useRouter } from "next/navigation"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useUpdate } from "@refinedev/core"
+import { useEditor } from "@tiptap/react"
+import { Loader2, Save, XOctagon } from "lucide-react"
+import { useForm } from "react-hook-form"
 import Balancer from "react-wrap-balancer"
 import * as z from "zod"
 
-import {ICategory} from "@/types/categories"
-import {IPost} from "@/types/posts"
-import {tipTapEditorConfig} from "@/config/tiptap"
-import {cn} from "@/lib/utils"
-import {Badge} from "@/components/ui/badge"
-import {Button} from "@/components/ui/button"
+import { ICategory } from "@/types/categories"
+import { IPost } from "@/types/posts"
+import { tipTapEditorConfig } from "@/config/tiptap"
+import { cn } from "@/lib/utils"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -31,7 +31,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-import {Input} from "@/components/ui/input"
+import { Input } from "@/components/ui/input"
 import {
   Select,
   SelectContent,
@@ -39,26 +39,26 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import {Separator} from "@/components/ui/separator"
-import {Textarea} from "@/components/ui/textarea"
+import { Separator } from "@/components/ui/separator"
+import { Textarea } from "@/components/ui/textarea"
 import Tiptap from "@/components/tiptap/Tiptap"
 
 const formSchema = z.object({
   postTitle: z
-    .string({required_error: "The title is required "})
-    .min(10, {message: "The title must have at least 10 characters"}),
+    .string({ required_error: "The title is required " })
+    .min(10, { message: "The title must have at least 10 characters" }),
   postDescription: z.string().min(40, {
     message: "The description must have at least 40 character",
   }),
-  postMainImage: z.string().url({message: "Please write a correct url"}),
+  postMainImage: z.string().url({ message: "Please write a correct url" }),
   Tags: z.string().optional(),
-  categoryId: z.string({required_error: "Please select a category"}),
+  categoryId: z.string({ required_error: "Please select a category" }),
 })
 
 const EditPostForm = ({
-                        categoryList,
-                        postData,
-                      }: {
+  categoryList,
+  postData,
+}: {
   categoryList: ICategory[]
   postData: IPost
 }) => {
@@ -75,15 +75,15 @@ const EditPostForm = ({
     },
   })
   const editor = useEditor(tipTapEditorConfig(postData.postContent))
-  const {isLoading, mutate, isSuccess} = useUpdate()
+  const { isLoading, mutate, isSuccess } = useUpdate()
   const router = useRouter()
 
   function onSubmit({
-                      postTitle,
-                      postMainImage,
-                      postDescription,
-                      categoryId,
-                    }: z.infer<typeof formSchema>) {
+    postTitle,
+    postMainImage,
+    postDescription,
+    categoryId,
+  }: z.infer<typeof formSchema>) {
     mutate(
       {
         resource: "posts",
@@ -106,7 +106,7 @@ const EditPostForm = ({
   }
 
   return (
-    <div className={"flex gap-16"}>
+    <div className={"flex flex-col gap-16 mx-auto w-[80%] min-w-0 md:w-[70%]"}>
       <Card className={"h-fit"}>
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl">Edit post</CardTitle>
@@ -124,7 +124,7 @@ const EditPostForm = ({
                 <FormField
                   control={form.control}
                   name="postTitle"
-                  render={({field}) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Title</FormLabel>
                       <FormControl>
@@ -136,14 +136,14 @@ const EditPostForm = ({
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage/>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
                 <FormField
                   control={form.control}
                   name="categoryId"
-                  render={({field}) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Category</FormLabel>
                       <Select
@@ -152,7 +152,7 @@ const EditPostForm = ({
                       >
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Select a category"/>
+                            <SelectValue placeholder="Select a category" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -164,14 +164,14 @@ const EditPostForm = ({
                         </SelectContent>
                       </Select>
 
-                      <FormMessage/>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
                 <FormField
                   control={form.control}
                   name="postMainImage"
-                  render={({field}) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Post Image Url</FormLabel>
                       <FormControl>
@@ -180,7 +180,7 @@ const EditPostForm = ({
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage/>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -189,7 +189,7 @@ const EditPostForm = ({
                     <FormField
                       control={form.control}
                       name="Tags"
-                      render={({field}) => (
+                      render={({ field }) => (
                         <FormItem>
                           <FormLabel>Post Tags</FormLabel>
                           <FormControl>
@@ -218,7 +218,7 @@ const EditPostForm = ({
                               ))
                             )}
                           </div>
-                          <FormMessage/>
+                          <FormMessage />
                         </FormItem>
                       )}
                     />
@@ -249,7 +249,7 @@ const EditPostForm = ({
                   <FormField
                     control={form.control}
                     name="postDescription"
-                    render={({field}) => (
+                    render={({ field }) => (
                       <FormItem>
                         <FormLabel>Post Description</FormLabel>
                         <FormControl>
@@ -261,22 +261,25 @@ const EditPostForm = ({
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage/>
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
                 </div>
               </div>
 
-              <Button className="flex gap-4 self-end" disabled={isLoading}>
+              <Button
+                className="flex gap-4 self-end fixed top-8 right-2 z-40"
+                disabled={isLoading}
+              >
                 {!isLoading ? (
                   <>
-                    <Save/>
-                    Save
+                    <Save />
+                    Save changes
                   </>
                 ) : (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin"/>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     Please wait
                   </>
                 )}
@@ -294,8 +297,8 @@ const EditPostForm = ({
             <Balancer>{description}</Balancer>
           </p>
         </div>
-        <Separator className="my-4 md:my-6"/>
-        <Tiptap editor={editor}/>
+        <Separator className="my-4 md:my-6" />
+        <Tiptap editor={editor} />
       </div>
     </div>
   )

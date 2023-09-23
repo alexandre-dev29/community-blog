@@ -2,12 +2,12 @@
 
 import React from "react"
 import Link from "next/link"
-import {useAppSelectedMenuState} from "@/states/state-management"
-import {CanAccess, useLogout} from "@refinedev/core"
-import {LogOut} from "lucide-react"
+import { useAppSelectedMenuState } from "@/states/state-management"
+import { CanAccess, useLogout } from "@refinedev/core"
+import { LogOut } from "lucide-react"
 
-import {NavSideBarProps} from "@/types/uiTypes"
-import {firstMenuList} from "@/config/datas"
+import { NavSideBarProps } from "@/types/uiTypes"
+import { firstMenuList } from "@/config/datas"
 import {
   Tooltip,
   TooltipContent,
@@ -15,16 +15,15 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-export const Sidebar = ({sidebarWidth, navBarHeight}: NavSideBarProps) => {
-  const {menuSelected, setSelectedMenu} = useAppSelectedMenuState()
-  const {mutate: mutateLogout} = useLogout()
+export const Sidebar = ({ sidebarWidth, navBarHeight }: NavSideBarProps) => {
+  const { menuSelected, setSelectedMenu } = useAppSelectedMenuState()
+  const { mutate: mutateLogout } = useLogout()
   return (
     <aside
       className={`z-40 h-screen border-r-2 bg-background shadow-md`}
       style={{
         left: 0,
         width: `${sidebarWidth - 1}px`,
-        minHeight: `${document.body.clientHeight}px`,
       }}
     >
       <div className={""}>
@@ -39,7 +38,7 @@ export const Sidebar = ({sidebarWidth, navBarHeight}: NavSideBarProps) => {
                 key={index}
                 action={""}
                 resource={element.text.toLowerCase()}
-                params={{resource: {name: element.text.toLowerCase()}}}
+                params={{ resource: { name: element.text.toLowerCase() } }}
               >
                 <TooltipProvider key={index}>
                   <Tooltip>
@@ -75,7 +74,7 @@ export const Sidebar = ({sidebarWidth, navBarHeight}: NavSideBarProps) => {
                     className={"mt-10 cursor-pointer"}
                     onClick={() => mutateLogout()}
                   >
-                    <LogOut/>
+                    <LogOut />
                   </li>
                 </TooltipTrigger>
                 <TooltipContent>

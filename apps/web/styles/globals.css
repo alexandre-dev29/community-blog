@@ -123,7 +123,8 @@ figcaption p {
 }
 
 .pre {
-  @apply border-x  bg-[#1e293b] dark:bg-[#1e293b];
+  @apply border-x  bg-[#1e293b] dark:bg-[#1e293b] rounded-3xl;
+
 }
 
 . code {
@@ -162,6 +163,9 @@ html.light [data-theme="dark"] {
   display: none;
 }
 
+pre{
+  border-radius: 5px !important;
+}
 code {
   margin-top: 0 !important;
   overflow-x: auto;

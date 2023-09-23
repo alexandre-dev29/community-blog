@@ -21,7 +21,7 @@ only such as create a new editor and management users.
 
 First of all the project was configure with POSTGRES for the database part but can work with any SQL or NOSQL Thanks to
 Prrisma.
-
+ALexandreSupabase29..
 first let’s clone the project , hope that git is already install on your machine 😑😑😑
 
 ```bash
