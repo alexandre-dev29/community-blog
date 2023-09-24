@@ -1,9 +1,10 @@
 "use client"
 
-import React, {Fragment, useRef, useState} from "react"
+import React, { Fragment, useRef, useState } from "react"
 import Image from "next/image"
-import {Dialog, Transition} from "@headlessui/react"
-import {AlertCircle} from "lucide-react"
+import { Dialog, Transition } from "@headlessui/react"
+
+import { cloudinaryLoader } from "@/lib/utils"
 
 import Cn from "./image-utils"
 
@@ -16,12 +17,12 @@ interface ModalImageElementProps {
 }
 
 export default function ModalImageElement({
-                                            setIsModalOpen,
-                                            isOpen,
-                                            imageSrc,
-                                            blurData,
-                                            hasBlurImage,
-                                          }: ModalImageElementProps) {
+  setIsModalOpen,
+  isOpen,
+  imageSrc,
+  blurData,
+  hasBlurImage,
+}: ModalImageElementProps) {
   const [isLoading, setLoading] = useState(true)
 
   const handleCancel = () => {
@@ -46,7 +47,7 @@ export default function ModalImageElement({
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"/>
+          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -60,14 +61,14 @@ export default function ModalImageElement({
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel
-                className="relative w-fit max-w-[50vw] overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full">
+              <Dialog.Panel className="relative w-fit max-w-[50vw] overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full">
                 <Image
                   height={530}
                   width={1879}
                   priority={true}
                   placeholder={hasBlurImage ? "blur" : "empty"}
                   blurDataURL={blurData}
+                  loader={cloudinaryLoader}
                   style={{
                     borderRadius: "10px",
                     transform: "translate3d(0, 0, 0)",

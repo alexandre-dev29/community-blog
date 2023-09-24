@@ -1,6 +1,4 @@
 import { EditorOptions } from "@tiptap/core"
-import { CodeBlock } from "@tiptap/extension-code-block"
-import Image from "@tiptap/extension-image"
 import { Link } from "@tiptap/extension-link"
 import { Placeholder } from "@tiptap/extension-placeholder"
 import Typography from "@tiptap/extension-typography"
@@ -9,6 +7,8 @@ import StarterKit from "@tiptap/starter-kit"
 import { CodeBlockPrism } from "tiptap-extension-code-block-prism"
 import { Markdown } from "tiptap-markdown"
 
+import { createImageExtension } from "@/config/customImage"
+import { cloudinaryUploadImage } from "@/lib/utils"
 import Iframe from "@/components/tiptap/Iframe"
 
 export const tipTapEditorConfig = (content: string): Partial<EditorOptions> => {
@@ -22,9 +22,8 @@ export const tipTapEditorConfig = (content: string): Partial<EditorOptions> => {
       }),
       Typography,
       Markdown,
-      CodeBlock,
       CodeBlockPrism.configure({ defaultLanguage: "text" }),
-      Image,
+      createImageExtension(cloudinaryUploadImage),
       Youtube.configure({
         controls: true,
       }),
