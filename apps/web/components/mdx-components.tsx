@@ -136,6 +136,7 @@ const mdxComponents = {
       {...props}
     />
   ),
+
   img: ({
     className,
     alt,
